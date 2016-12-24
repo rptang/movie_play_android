@@ -7,14 +7,23 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:theme="@style/FullScreenAndNoTitle">
         android:theme="@style/AppTheme">
-        <activity android:name=".MovieActivity">
+
+        <activity android:name="com.project.rptang.android.activity.MovieActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.project.rptang.android.activity.MoviePlayActivity" />
+
+        <service
+            android:name="com.project.rptang.android.service.SearchUDiskMovieService"
+            android:exported="false" />
+
     </application>
 
 </manifest>

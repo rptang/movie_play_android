@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.project.rptang.android.component.VerticalVolumeSeekBar
+            android:id="@+id/sk_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="360dip"
+            android:layout_marginLeft="1180dip"
+            android:layout_marginTop="320dip"
+            android:maxHeight="3dip"
+            android:background="#080808"/>
+
+        <RelativeLayout
+            android:id="@+id/player_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:background="#000000">
+
+            <TextView
+                android:id="@+id/movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DCA56E"
+                android:textSize="34sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dip"
+                android:text="电影A"/>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/player_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:layout_alignParentBottom="true"
+            android:background="#080808">
+
+
+            <ImageView
+                android:id="@+id/iv_pause_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dip"/>
+
+            <View
+                android:id="@+id/slide1"
+                android:layout_width="2dip"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_pause_movie"
+                android:background="#464646"/>
+
+            <com.project.rptang.android.component.MovieSeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/slide2"
+                android:layout_toRightOf="@+id/slide1"
+                android:layout_marginRight="40dip"
+                android:layout_marginLeft="40dip"
+                android:maxHeight="2dip"
+                android:max="100"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:id="@+id/slide2"
+                android:layout_width="2dip"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/iv_volume"
+                android:background="#464646"/>
+
+
+            <ImageView
+                android:id="@+id/iv_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dip"
+                    android:textColor="#DCA56E"
+                    android:text="00:00:00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dip"
+                    android:textColor="#464646"
+                    android:text=" / "/>
+
+                <TextView
+                    android:id="@+id/tv_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dip"
+                    android:textColor="#464646"
+                    android:text="01:45:30"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
