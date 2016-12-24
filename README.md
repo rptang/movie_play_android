@@ -3,4 +3,4 @@ Today is a landmark significance for me , I push the project to the github for t
 
 ##### Firstly, let me show you about the view about runding project .
 ![image](https://github.com/rptang/assistive_touch_android/blob/master/movie_gridview.png)
-![image](https://github.com/rptang/assistive_touch_android/blob/master/movie_play.png)
+![image](https://github.com/rptang/assistive_touch_android/blob/master/movie_play.png)   
